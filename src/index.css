@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    img{
+        width: 100%
+    }
+    .section{
+        @apply container mx-auto py-[8rem]
+        px-6;
+    }
+  
+    
+}
+  .bg-transparentBlack {
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    }
+ 
