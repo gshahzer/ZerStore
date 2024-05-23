@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { total } from "./components/State/Slice/CartSlice";
 import { ItemDetails } from "./components/ItemDetails";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Admin from "./components/Admin";
 
 function App() {
   const { cartItems } = useSelector((state) => state.cart);
@@ -33,10 +34,13 @@ function App() {
               </div>
             }
           />
+
           <Route
             path="/ItemDetails/:id"
             element={<ItemDetails isOpen={isOpen} />} // Pass isOpen to ItemDetails
           />
+
+          <Route path="/admin" element={<Admin />} />
         </Routes>
 
         <Footer />

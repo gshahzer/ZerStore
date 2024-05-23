@@ -9,7 +9,7 @@ const Hero = () => {
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-100">
             Known For Making
             <br class="hidden lg:inline-block" />
-            High Quality Products
+            Revolutionized Clothing
           </h1>
           <p class="mb-8 leading-relaxed text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus

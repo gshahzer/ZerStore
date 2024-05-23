@@ -27,18 +27,20 @@ const Navbar = () => {
         isScrolled ? "bg-white shadow-lg" : ""
       }`}
     >
-      <div className="flex items-start justify-between relative container py-4 px-2 mx-auto">
+      <div className="flex items-center justify-between relative container py-4 px-2 mx-auto">
         <Link to="/">
           <div className="font-bold text-2xl">Zer Store</div>
         </Link>
-
-        <div
-          className="relative cursor-pointer"
-          onClick={() => dispatch(open())}
-        >
-          <BiShoppingBag className="text-3xl opacity-80" />
-          <div className="bg-black text-white rounded-full flex items-center justify-center absolute w-4 h-4 z-10 right-[-3px] bottom-[-3px] text-[10px]">
-            {amount}
+        <div className="flex items-center">
+         
+          <div
+            className="relative cursor-pointer ml-4"
+            onClick={() => dispatch(open())}
+          >
+            <BiShoppingBag className="text-3xl opacity-80" />
+            <div className="bg-black text-white rounded-full flex items-center justify-center absolute w-4 h-4 z-10 right-[-3px] bottom-[-3px] text-[10px]">
+              {amount}
+            </div>
           </div>
         </div>
       </div>
